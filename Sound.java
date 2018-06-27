@@ -13,15 +13,18 @@ public class Sound extends Button
      * the 'Act' or 'Run' button gets pressed in the environment.
     */
     int i = 1;
-
-    
+    GreenfootSound bgm;
+    public Sound(GreenfootSound music)
+    {
+        bgm = music;
+    }
     public void act() 
     {
         // Add your action code here
         Playfield.backgroundMusic.stop();
         Tutorial.backgroundMusic.stop();
         Credits.backgroundMusic.stop();
-         
+        
                     MouseInfo mouse = Greenfoot.getMouseInfo();
                    if (mouse != null)
                    {
@@ -35,28 +38,32 @@ public class Sound extends Button
                                     i++;
                                     if(i == 1)
                                     {
+                                        bgm.setVolume(30);
                                         setImage("Volume +++.png"); 
                                         
                                     }
                                     if(i == 2)
                                     {
+                                        bgm.setVolume(20);
                                         setImage("Volume ++.png"); 
                                         
                                     }
                                     if(i == 3)
                                     {
+                                        bgm.setVolume(10);
                                         setImage("Volume +.png"); 
                                         
                                     }
                                     if(i == 4)
                                     {
+                                        bgm.setVolume(0);
                                         setImage("Volume x.png"); 
                                         
                                     }
                                     if(i==5)
                                     {    
                                         setImage("Volume +++.png"); 
-                                        
+                                        bgm.setVolume(30);
                                         i =0;
                                     }
                                 }

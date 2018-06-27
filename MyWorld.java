@@ -13,13 +13,11 @@ public class MyWorld extends World
      * Constructor for objects of class MyWorld.
      * 
      */
-    static GreenfootSound backgroundMusic = new GreenfootSound("Menu Start.mp3");
+    static GreenfootSound backgroundMusic;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(351, 585, 1); 
-        backgroundMusic.setVolume(30);
-        backgroundMusic.playLoop();
         prepare();
         
     }
@@ -58,7 +56,10 @@ public class MyWorld extends World
         shop.setLocation(63,540);
         rider.setLocation(289,542);
         exit.setLocation(203,419);
-        Sound sound = new Sound();
+        backgroundMusic = new GreenfootSound("Menu Start.mp3");
+        backgroundMusic.setVolume(30);
+        backgroundMusic.playLoop();
+        Sound sound = new Sound(backgroundMusic);
         addObject(sound,99,435);
         sound.setLocation(127,419);
         redlight.setLocation(175,366);
@@ -67,6 +68,7 @@ public class MyWorld extends World
         addObject(tutorialbutton,272,222);
         CreditButton creditbutton = new CreditButton();
         addObject(creditbutton,getWidth()/2,540);
+        
     }
 
 
