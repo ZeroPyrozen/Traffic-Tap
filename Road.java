@@ -16,21 +16,32 @@ public class Road extends UI
     public static float speed = 1;
     public static float velocity = 0f;
     public int count = 0;
+    
     public void act() 
     {
         // Add your action code here.
        
         movement();
-        if(count==970)
+        //if(count==970)
+        //{
+         //   count = 0;
+        //    resetRoad();
+        //}
+        if((getY()/2)==(getImage().getHeight()))
         {
-            count = 0;
-            resetRoad();
+            generateRoad();
         }
-        if(getY()>1000)
+        if(g>getWorld().getHeight())
         {
             getWorld().removeObject(this);
         }
-        count++;
+        //count++;
+    }
+    public void generateRoad()
+    {
+        Road jalan = new Road();
+        getWorld().addObject(jalan, getWorld().getWidth()/2, 0);
+        jalan.setLocation(getWorld().getWidth()/2,0);
     }
     public void resetRoad()
     {
