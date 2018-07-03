@@ -71,6 +71,13 @@ public class Playfield extends World
         addObject(mobil,getWidth()/2,getHeight()-150);
 
         //Moving Object
+        int y = getHeight()/2;
+        Road jalan = new Road();
+        addObject(jalan,getWidth()/2,y);
+        y = y - jalan.getImage().getHeight();
+        Road jalan2 = new Road();
+        addObject(jalan2, getWidth()/2,y);
+        /*
         Road jalan = new Road();
         addObject(jalan,getWidth()/2,getHeight()/2);
         Road jalan2 = new Road();
@@ -79,6 +86,7 @@ public class Playfield extends World
         addObject(jalan3, getWidth()/2,0-getHeight()-getHeight());
         Road jalan4 = new Road();
         addObject(jalan4, getWidth()/2,0-getHeight()-getHeight()-getHeight());
+        */
         GenerateLamp lamp = new GenerateLamp();
         addObject(lamp, getWidth()/2,0-getHeight());
 

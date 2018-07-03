@@ -16,7 +16,7 @@ public class Road extends UI
     public static float speed = 1;
     public static float velocity = 0f;
     public int count = 0;
-    
+    public int posY = 0;
     public void act() 
     {
         // Add your action code here.
@@ -27,11 +27,18 @@ public class Road extends UI
          //   count = 0;
         //    resetRoad();
         //}
-        if((getY()/2)==(getImage().getHeight()))
+        
+        if (getY() >= getWorld().getHeight()/2 + getImage().getHeight())
         {
             generateRoad();
+            getWorld().removeObject(this);
+            return;
         }
-        if(g>getWorld().getHeight())
+        if((getY()/2)==(getImage().getHeight()))
+        {
+            //generateRoad();
+        }
+        if(getX()>getWorld().getHeight())
         {
             getWorld().removeObject(this);
         }
@@ -40,9 +47,10 @@ public class Road extends UI
     public void generateRoad()
     {
         Road jalan = new Road();
-        getWorld().addObject(jalan, getWorld().getWidth()/2, 0);
-        jalan.setLocation(getWorld().getWidth()/2,0);
+        getWorld().addObject(jalan, getWorld().getWidth()/2,(getWorld().getHeight()/2) - getImage().getHeight());
+        //jalan.setLocation(getWorld().getWidth()/2,(getWorld().getHeight()/2) - getImage().getHeight());
     }
+    /*
     public void resetRoad()
     {
         
@@ -50,7 +58,7 @@ public class Road extends UI
         getWorld().addObject(jalan, getWorld().getWidth()/2, 0);
         Road jalan2 = new Road();
         getWorld().addObject(jalan2, getWorld().getWidth()/2, 0-getWorld().getHeight());
-    }
+    }*/
     private void movement()
     {
         setLocation(getX(),(int)(getY()+speed));

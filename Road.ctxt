@@ -6,9 +6,8 @@ comment1.target=void\ act()
 comment2.params=
 comment2.target=void\ generateRoad()
 comment3.params=
-comment3.target=void\ resetRoad()
+comment3.target=void\ movement()
+comment3.text=\r\n\ \ \ \ public\ void\ resetRoad()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ Road\ jalan\ \=\ new\ Road();\r\n\ \ \ \ \ \ \ \ getWorld().addObject(jalan,\ getWorld().getWidth()/2,\ 0);\r\n\ \ \ \ \ \ \ \ Road\ jalan2\ \=\ new\ Road();\r\n\ \ \ \ \ \ \ \ getWorld().addObject(jalan2,\ getWorld().getWidth()/2,\ 0-getWorld().getHeight());\r\n}
 comment4.params=
-comment4.target=void\ movement()
-comment5.params=
-comment5.target=float\ getSpeed()
-numComments=6
+comment4.target=float\ getSpeed()
+numComments=5
