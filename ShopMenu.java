@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class ShopMenu here.
  * 
- * @author (your name) 
+ * @Pyrozen (your name) 
  * @version (a version number or a date)
  */
 public class ShopMenu extends World
@@ -15,7 +15,6 @@ public class ShopMenu extends World
      */
     public ShopMenu()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(351, 585, 1); 
         prepare();
     }

@@ -16,11 +16,11 @@ public class TutorialButton extends Button
     public void act() 
     {
         // Add your action code here.
-           MouseInfo mouse = Greenfoot.getMouseInfo();
-       if (mouse != null)
-       {
-       setImage("Question Not Pressed.png");
-        List objects = getWorld().getObjectsAt(mouse.getX(), mouse.getY(), Button.class);
+        MouseInfo mouse = Greenfoot.getMouseInfo();
+        if (mouse != null)
+        {
+            setImage("Question Not Pressed.png");
+            List objects = getWorld().getObjectsAt(mouse.getX(), mouse.getY(), Button.class);
             for (Object object : objects)
             {
                 if (object == this)
@@ -28,11 +28,11 @@ public class TutorialButton extends Button
                     setImage("Question Pressed.png");
                 }
             }
-       }
-       if(Greenfoot.mouseClicked(this))
-       {
-           effect.play();
-          Greenfoot.setWorld(new Tutorial());
-       }
+        }
+        if(Greenfoot.mouseClicked(this))
+        {
+            effect.play();
+            Greenfoot.setWorld(new Tutorial());
+        }
     }    
 }

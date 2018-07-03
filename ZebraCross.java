@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class ZebraCross here.
  * 
- * @author (your name) 
+ * @Pyrozen (your name) 
  * @version (a version number or a date)
  */
 public class ZebraCross extends Actor
@@ -15,7 +15,7 @@ public class ZebraCross extends Actor
     public static float speed = 0f;
     public int state = 0;
     public int score = 0;
-    int cek=0;
+    int cek = 0;
     private Actor car;
     public TrafficLight tl;
     public ZebraCross zc;
@@ -32,13 +32,12 @@ public class ZebraCross extends Actor
     {
         // Add your action code here.
         tl = (TrafficLight)getOneObjectAtOffset(100, 0, TrafficLight.class);
-         if(tl!=null)
-         { 
-             state=tl.getState();
-         } 
+        if(tl!=null)
+        { 
+            state=tl.getState();
+        } 
         speed = Road.getSpeed();
         setLocation(getX(),(int)(getY()+speed));
-        
         if (cek == 0)
         {
             if(isTouching(Car.class))

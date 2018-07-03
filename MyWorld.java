@@ -3,23 +3,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class MyWorld here.
  * 
- * @author (your name) 
+ * @Pyrozen (your name) 
  * @version (a version number or a date)
  */
 public class MyWorld extends World
 {
-    
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
     static GreenfootSound backgroundMusic;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(351, 585, 1); 
         prepare();
-        
     }
   
     /**
@@ -70,8 +64,6 @@ public class MyWorld extends World
         addObject(creditbutton,getWidth()/2,540);
         
     }
-
-
     public void LaguStop()
     {
         backgroundMusic.stop();

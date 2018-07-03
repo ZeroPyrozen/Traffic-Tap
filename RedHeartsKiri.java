@@ -3,7 +3,7 @@ import java.util.List;
 /**
  * Write a description of class RedHeartsKiri here.
  * 
- * @author (your name) 
+ * @Pyrozen (your name) 
  * @version (a version number or a date)
  */
 public class RedHeartsKiri extends RedHearts
@@ -18,7 +18,7 @@ public class RedHeartsKiri extends RedHearts
     }   
     public void Check()
     {
-         if (!getWorld().getObjects(TrafficLight.class).isEmpty())   
+        if (!getWorld().getObjects(TrafficLight.class).isEmpty())   
         {
             List <TrafficLight> Traff = getWorld().getObjects(TrafficLight.class);
             int state = Traff.get(0).GetState();    
@@ -35,7 +35,6 @@ public class RedHeartsKiri extends RedHearts
                             Con = 0;
                             setImage("RedHearts DED.png");
                         }
-                        
                     }
                 }
             }

@@ -1,13 +1,12 @@
 #BlueJ class context
 comment0.target=Road
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Road\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Road\ here.\r\n\ \r\n\ @Pyrozen\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment2.params=
 comment2.target=void\ generateRoad()
 comment3.params=
 comment3.target=void\ movement()
-comment3.text=\r\n\ \ \ \ public\ void\ resetRoad()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ Road\ jalan\ \=\ new\ Road();\r\n\ \ \ \ \ \ \ \ getWorld().addObject(jalan,\ getWorld().getWidth()/2,\ 0);\r\n\ \ \ \ \ \ \ \ Road\ jalan2\ \=\ new\ Road();\r\n\ \ \ \ \ \ \ \ getWorld().addObject(jalan2,\ getWorld().getWidth()/2,\ 0-getWorld().getHeight());\r\n}
 comment4.params=
 comment4.target=float\ getSpeed()
 numComments=5

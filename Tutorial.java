@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Tutorial here.
  * 
- * @author (your name) 
+ * @Pyrozen (your name) 
  * @version (a version number or a date)
  */
 public class Tutorial extends World
@@ -34,17 +34,13 @@ public class Tutorial extends World
         PlayTutorial playtutorial = new PlayTutorial();
         addObject(playtutorial,44,463);
         playtutorial.setLocation(45,463);
-
         BottomScreen Bawah = new BottomScreen();
         addObject(Bawah,getWidth()/2,getHeight()-45);
-
         Car mobil = new Car();
         addObject(mobil,getWidth()/2,getHeight()-150);
-
         //Hearts Yellow
         HatiYellowBeta HatiYel = new HatiYellowBeta();
         addObject(HatiYel,235,563);
-
         //Hearts Red
         HatiBeta Hati = new HatiBeta();
         addObject(Hati,getWidth()/2,510);

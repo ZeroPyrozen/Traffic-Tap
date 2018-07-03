@@ -3,16 +3,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Credits here.
  * 
- * @author (your name) 
+ * @Pyrozen (your name) 
  * @version (a version number or a date)
  */
 public class Credits extends World
 {
-
-    /**
-     * Constructor for objects of class Credits.
-     * 
-     */
     static GreenfootSound backgroundMusic = new GreenfootSound("Game Credit.mp3");
     public Credits()
     {    

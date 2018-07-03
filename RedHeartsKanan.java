@@ -20,7 +20,7 @@ public class RedHeartsKanan extends RedHearts
     public void Check()
     {
         
-         if (!getWorld().getObjects(TrafficLight.class).isEmpty())   
+        if (!getWorld().getObjects(TrafficLight.class).isEmpty())   
         {
             List <TrafficLight> Traff = getWorld().getObjects(TrafficLight.class);
             int state = Traff.get(0).GetState();    
@@ -42,6 +42,4 @@ public class RedHeartsKanan extends RedHearts
             }
         }
     }
-  
- 
 }

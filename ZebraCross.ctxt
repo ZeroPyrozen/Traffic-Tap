@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=ZebraCross
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ ZebraCross\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ZebraCross\ here.\r\n\ \r\n\ @Pyrozen\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=state
 comment1.target=ZebraCross(int)
 comment2.params=state

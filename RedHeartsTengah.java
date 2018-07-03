@@ -18,7 +18,7 @@ public class RedHeartsTengah extends RedHearts
     }   
     public void Check()
     {
-         if (!getWorld().getObjects(TrafficLight.class).isEmpty())   
+        if (!getWorld().getObjects(TrafficLight.class).isEmpty())   
         {
             List <TrafficLight> Traff = getWorld().getObjects(TrafficLight.class);
             int state = Traff.get(0).GetState();    
@@ -35,8 +35,7 @@ public class RedHeartsTengah extends RedHearts
                             Con++;
                             Con = 0;
                             setImage("RedHearts DED.png");
-                        }
-                        
+                        } 
                     }
                 }
             }
