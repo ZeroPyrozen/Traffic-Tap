@@ -1,6 +1,6 @@
 
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.*;
 /**
  * Write a description of class Playfield here.
  * 
@@ -10,17 +10,20 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Playfield extends World
 {
     static GreenfootSound backgroundMusic = new GreenfootSound("InGame.mp3");
+    public long startTime = 0;
     public Playfield()
     {    
         super(350, 585, 1,false);
         backgroundMusic.setVolume(30);
         backgroundMusic.playLoop();
         setPaintOrder(Back.class,RedHearts.class,YellowHearts.class,TopScreen.class,BottomScreen.class,Car.class,ZebraCross.class,Road.class);
+        
         prepare();
     }
     private TrafficLight TrafficLight;
     public void prepare()
     {
+        startTime = System.currentTimeMillis();
         //Screen UI
         TopScreen Atas = new TopScreen();
         addObject(Atas,getWidth()/2,getHeight()-569);
@@ -51,9 +54,12 @@ public class Playfield extends World
         //Button
         Back bck = new Back();
         addObject(bck,300,15);
-
+        
     }
-    
+    public long getStartTime()
+    {
+        return startTime;
+    }
     public TrafficLight getCounter()
     {
         return TrafficLight;

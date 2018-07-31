@@ -1,8 +1,10 @@
 #BlueJ class context
 comment0.target=GenerateLamp
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ GenerateLamp\ here.\r\n\ \r\n\ @Pyrozen\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GenerateLamp\ here.\r\n\ \r\n\ @Pyrozen\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
-comment1.target=void\ act()
-comment2.params=space
-comment2.target=void\ generateLampBaru(int)
-numComments=3
+comment1.target=GenerateLamp()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=space
+comment3.target=void\ generateLampBaru(int)
+numComments=4
